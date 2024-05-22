@@ -3,8 +3,11 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/build/bdist.win-amd64" />
+      <excludeFolder url="file://$MODULE_DIR$/build/lib" />
       <excludeFolder url="file://$MODULE_DIR$/private" />
+      <excludeFolder url="file://$MODULE_DIR$/toolbox.egg-info" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

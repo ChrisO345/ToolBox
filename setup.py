@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -8,7 +8,7 @@ setup(
     version="0.0.10",
     description="Useful scripts accumulated",
     # package_dir={"": ""},
-    # packages=find_packages(where=""),
+    packages=find_packages(include=['toolbox', 'toolbox.*']),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
