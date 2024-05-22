@@ -23,6 +23,6 @@ setup(
     python_requires=">=3.10",
     entry_points={
         'console_scripts': [
-            'hello_test = toolbox.util.time.test:hello'
+            'hello_test = toolbox.util.time.hello:hello_world'
         ]}
 )
