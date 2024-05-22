@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: toolbox
+Version: 0.0.10
+Summary: Useful scripts accumulated
+Home-page: 
+Author: ChrisO345
+Author-email: 
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# README.md
+
+Blah Blah Blah, Internal Tools, blah blah blah
