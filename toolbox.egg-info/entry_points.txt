@@ -1,2 +1,0 @@
-[console_scripts]
-hello_test = toolbox.util.time.test:hello
