@@ -30,7 +30,7 @@ def isum(*numbers: Union[Iterable, Number]) -> Number:
     The sum of all numeric elements within the provided iterables.
 
     Raises
-    -------
+    ------
     TypeError
         If any element in the input is not a numeric type (int, float, complex).
     """
