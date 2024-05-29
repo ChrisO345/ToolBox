@@ -36,12 +36,16 @@ def vandermonde(ti: Iterable, yi: Iterable, dims: int = 3) -> (np.ndarray, np.nd
         If dims is not an integer.
     ValueError
         If dims is less than 1.
+
     """
     if not isinstance(ti, np.ndarray):
         ti = np.array(ti)
 
     if not isinstance(yi, np.ndarray):
         yi = np.array(yi)
+
+    if ti.shape != yi.shape:
+        raise ValueError("ti and yi must have the same first dimension")
 
     if not isinstance(dims, int):
         types = str(type(dims)).split()[1][:-1:]
