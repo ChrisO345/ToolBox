@@ -11,7 +11,7 @@ setup(
     packages=find_packages(include=['toolbox', 'toolbox.*']),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://chriso345.github.io",
     author="ChrisO345",
     author_email="",
     license="MIT",
@@ -23,6 +23,6 @@ setup(
     python_requires=">=3.10",
     entry_points={
         'console_scripts': [
-            'hello_test = toolbox.util.time.hello:hello_world'
+            'hello_test = toolbox.test.hello:hello_world'
         ]}
 )
