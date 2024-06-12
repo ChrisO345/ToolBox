@@ -10,6 +10,7 @@ from typing import Union, Iterable
 from numbers import Number
 from six import string_types
 
+
 def mult(*numbers: Union[Iterable, Number]) -> Number:
     """
     Calculates the product of numeric elements within nested iterables.
