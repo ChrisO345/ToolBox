@@ -8,7 +8,7 @@ setup(
     version="0.0.10",
     description="Useful scripts accumulated",
     # package_dir={"": ""},
-    packages=find_packages(include=['toolbox', 'toolbox.*']),
+    packages=find_packages(include=['toolbox', 'toolbox.*'], exclude=['toolbox.test.tests']),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://chriso345.github.io",
