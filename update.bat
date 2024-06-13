@@ -1,2 +1,2 @@
-py setup.py bdist_wheel sdist
+py -m build
 pip install .
