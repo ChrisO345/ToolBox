@@ -1,0 +1,29 @@
+name: Directory Writer
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+
+    - name: Build Directory.md
+      run:
+        python3 .github/directory_writer.py | tee DIRECTORY.md
+
+    - name: Update Directory.md
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git add DIRECTORY.md
+        git commit -am "update DIRECTORY.md" || true
+        git push --force origin HEAD:${GITHUB_REF} || true
