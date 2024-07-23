@@ -26,7 +26,7 @@ def good_file_paths(top_dir: str = ".") -> Iterator[str]:
         dir_names[:] = [
             d
             for d in dir_names
-            if d != "scripts" and d[0] not in "._"
+            if d != "scripts" and d[0] not in "._" and d != "test"
         ]
         for filename in filenames:
             if filename.startswith("__"):
