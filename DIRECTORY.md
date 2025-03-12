@@ -18,6 +18,8 @@
     * Ciphers
       * [Base32](toolbox/util/ciphers/base32.py)
       * [Base85](toolbox/util/ciphers/base85.py)
+    * Secrets
+      * [Read Env](toolbox/util/secrets/read_env.py)
     * Time
       * [Runtime](toolbox/util/time/runtime.py)
       * [Timeit](toolbox/util/time/timeit.py)
