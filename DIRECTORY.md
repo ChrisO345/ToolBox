@@ -14,11 +14,6 @@
       * [Polynomial Regression](toolbox/math/linalg/polynomial_regression.py)
       * [Vandermonde](toolbox/math/linalg/vandermonde.py)
     * [Mult](toolbox/math/mult.py)
-  * Test
-    * [Hello](toolbox/test/hello.py)
-    * Tests
-      * Iterators
-        * [Test Windows](toolbox/test/tests/iterators/test_windows.py)
   * Util
     * Ciphers
       * [Base32](toolbox/util/ciphers/base32.py)
